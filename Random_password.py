@@ -24,8 +24,9 @@ if pass_length_int <= 8:
           cracked in under 5 minutes*
           ** Recommended Password Length: 14+ Characters **""")
 
+print_stmt = f"Your {pass_length_int} character, random password is: \n{password}"
 
 f = open('Passwords.txt', 'a')
 with open('Passwords.txt', 'a') as f:
     # for passwords in password:
-    f.write(password + "\n")
+    f.write(print_stmt + "\n")
